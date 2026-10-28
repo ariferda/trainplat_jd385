@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ariferda-trainplat_jd385"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出大模型训练平台工程师·张量并行切分策略上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ariferda" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ariferda.github.io"
+Repository = "https://github.com/ariferda/trainplat_jd385"
+Issues = "https://github.com/ariferda/trainplat_jd385/issues"
+
+[project.scripts]
+trainplat_jd385 = "trainplat_jd385:main"
+
+[tool.setuptools]
+py-modules = ["trainplat_jd385"]
